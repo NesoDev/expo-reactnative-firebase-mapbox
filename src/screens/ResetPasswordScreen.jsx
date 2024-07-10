@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import TextInput from '../components/TextInput'
 import Button from '../components/Button'
 import { emailValidator } from '../helpers/emailValidator'
-import { sendEmailWithPassword } from '../api/auth-api'
+import { sendEmailWithPassword } from '../api/firebase-api'
 import Toast from '../components/Toast'
 
 export default function ResetPasswordScreen({ navigation }) {

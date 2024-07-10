@@ -10,7 +10,7 @@ import BackButton from '../components/BackButton';
 import { theme } from '../core/theme';
 import { emailValidator } from '../helpers/emailValidator';
 import { passwordValidator } from '../helpers/passwordValidator';
-import { loginUser } from '../api/auth-api';
+import { loginUser } from '../api/firebase-api';
 import Toast from '../components/Toast';
 
 export default function LoginScreen({ navigation }) {
@@ -48,7 +48,7 @@ export default function LoginScreen({ navigation }) {
       setError('');
       forceUpdate();
       setTimeout(() => {
-        navigation.replace('Dashboard');
+        navigation.replace('MainScreen');
       }, 1500);
     }
   };

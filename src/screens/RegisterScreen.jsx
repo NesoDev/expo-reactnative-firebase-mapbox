@@ -11,7 +11,7 @@ import { theme } from '../core/theme'
 import { emailValidator } from '../helpers/emailValidator'
 import { passwordValidator } from '../helpers/passwordValidator'
 import { nameValidator } from '../helpers/nameValidator'
-import { signUpUser } from '../api/auth-api'
+import { signUpUser } from '../api/firebase-api'
 import Toast from '../components/Toast'
 
 export default function RegisterScreen({ navigation }) {
